@@ -1,9 +1,11 @@
 FROM debian:jessie
 
 RUN apt-get update && apt-get install -y \
+    curl \
+    && curl -sL https://deb.nodesource.com/setup_6.x | bash /dev/stdin
+
+RUN apt-get install -y \
     nodejs \
-    nodejs-legacy \
-    npm \
     ruby-full \
     rubygems \
     && npm install -g gulp-cli \
