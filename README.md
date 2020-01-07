@@ -19,4 +19,4 @@ This service is meant to start a docker container, run a gulp task and then be r
 docker run -it --rm -v $(pwd):/srv -w="/srv/src/resource" huli/gulp build
 ```
 
-The above comand will start a docker container with the `huli/gulp` image, mounting the folder project in the `/srv` folder and setting `/srv/src/resource` as the working directory, this should be the folder where the `Gruntfile.js` is located. Finally it will run npm install and execute the `build` task.
+The above comand will start a docker container with the `huli/gulp` image, mounting the folder project in the `/srv` folder and setting `/srv/src/resource` as the working directory, this should be the folder where the `Gulpfile.js` is located. Finally it will run npm install and execute the `build` task.
